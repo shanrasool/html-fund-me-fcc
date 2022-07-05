@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Fund Me App</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: large;
+    }
+    .upper {
+      margin: 20px;
+      padding: 10px;
+      word-spacing: 10px;
+    }
+    .form {
+      margin: 10px;
+      word-spacing: 5px;
+    }
+  </style>
+  <body>
+    <h2>Fund Me App</h2>
+    <div class="upper">
+      <button id="connectButton">Connect</button>
+      <button id="balanceButton">Get Balance</button>
+      <button id="withdrawButton">Withdraw</button>
+    </div>
+
+    <div class="form">
+      <label for="fund">ETH Amount</label>
+      <input id="ethAmount" placeholder="0.1" />
+      <button id="fundButton" onclick="fund()">Fund</button>
+    </div>
+  </body>
+  <script src="./index.js" type="module"></script>
+</html>
